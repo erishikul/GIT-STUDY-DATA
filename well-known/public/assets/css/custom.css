@@ -1,0 +1,488 @@
+
+    * {
+
+        box-sizing: border-box;
+    }
+
+    .box-data {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    table td {
+        width: 25%;
+    }
+
+    .pl-0 {
+        padding-left: 0px;
+    }
+
+    .pr-0 {
+        padding-right: 0px;
+    }
+    .p-0 {
+        padding: 0px;
+    }
+
+    /* ============================= */
+
+    .table-style thead tr th {
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+        width: 33.33%;
+    }
+
+    .table-b tr:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+   .table-b td {
+       padding-bottom: 0px !important;
+        background: #F2F3F4;
+    }
+
+    #image1 {
+        height: 60px;
+        background-color: #868a08;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        margin: 2px;
+        width: 98.5%;
+    }
+
+    #image1 a {
+        height: 60px;
+        width: 245px;
+        background-color: #868a08;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    #image2 {
+        height: 60px;
+        background-color: #0404b4;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        margin: 2px;
+        width: 98.5%;
+    }
+
+    #image2 a {
+        height: 60px;
+        width: 245px;
+        background-color: #0404b4;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    #image3 {
+        height: 60px;
+        background-color: #fb5e03;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        margin: 2px;
+        width: 98.5%;
+    }
+
+    #image3 a {
+        height: 60px;
+        width: 245px;
+        background-color: #fb5e03;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    #image4 {
+        height: 60px;
+        background-color: #8c0101;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        margin: 2px;
+        width: 98.5%;
+    }
+
+    #image4 a {
+        height: 60px;
+        width: 245px;
+        background-color: #8c0101;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    #image5 {
+        height: 60px;
+        background-color: #8c0101;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        margin: 2px;
+        width: 98.5%;
+    }
+
+    #image5 a {
+        height: 60px;
+        width: 245px;
+        background-color: #8c0101;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    #image6 {
+        height: 60px;
+        background-color: #fb0303;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        margin: 2px;
+        width: 98.5%;
+    }
+
+    #image6 a {
+        height: 60px;
+        width: 245px;
+        background-color: #fb0303;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    #image7 {
+        height: 60px;
+        background-color: #0b610b;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        margin: 2px;
+        width: 98.5%;
+    }
+
+    #image7 a {
+        height: 60px;
+        width: 245px;
+        background-color: #0b610b;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    #image8 {
+        height: 60px;
+        background-color: #ff00bf;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        margin: 2px;
+        width: 98.5%;
+    }
+
+    #image8 a {
+        height: 60px;
+        width: 245px;
+        background-color: #ff00bf;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    #image9 {
+        height: 60px;
+        background-color: #0080ff;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        margin: 2px;
+        width: 98.5%;
+    }
+
+    #image9 a {
+        height: 60px;
+        width: 245px;
+        background-color: #0080ff;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+
+
+    .table-b tr td {
+        padding: 6px 4px 6px 4px!important;
+        border-bottom: 1px solid black;
+        max-height: 65px;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+
+    td {
+        padding: 0px !important;
+    }
+
+
+
+    .table-b tr td a {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.8px;
+        font-family: Arial, sans-serif;
+        cursor: pointer;
+        color: #090959;
+
+    }
+
+
+
+    .key a::after {
+        content: '';
+        color: red;
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+        background: red;
+        width: 20%;
+        height: 5px
+    }
+
+
+
+    .more {
+        padding: 20px;
+        cursor: pointer;
+        border-radius: 7px;
+        background: #49c7ed;
+        color: #fff;
+    }
+
+
+
+    .title h1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+
+
+    .vacancies {
+        border-top: 2px solid #5e5eb85e;
+        border-right: 2px solid #5e5eb85e;
+    }
+
+
+
+    .vacancies a h3 {
+        padding: 10px;
+    }
+
+    .vacancies a :hover {
+        background-color: #5e5eb896;
+        color: white;
+    }
+
+
+
+    .vacancies a {
+        color: black;
+        font-family: "Roboto", Sans-serif;
+        font-size: 23px;
+        font-weight: 500;
+        text-decoration: none;
+        line-height: 1.4em;
+
+    }
+
+    .mt-4 {
+        margin-top: 4rem;
+    }
+
+
+
+    .icon li i {
+        font-size: 30px;
+        color: rgb(94, 94, 184);
+    }
+
+
+    .ul-top {
+        list-style: none;
+        margin: 0px;
+    }
+
+    .ul-top li {
+        margin-right: 5px;
+    }
+
+
+
+    .ul-top li a {
+        cursor: pointer;
+        font-size: medium;
+        font-weight: 500;
+        padding: 10px;
+        color: #fff;
+        background-image: linear-gradient(315deg, #9e8fb2 0%, #a7acd9 74%);
+    }
+
+
+
+    .mbtn {
+        background-color: #9e8fb2;
+        color: black;
+    }
+
+
+
+    /* =========table==================== */
+
+    .job-table table {
+        border-spacing: 2px solid grey;
+        background-color: #F2F3F4;
+    }
+
+
+
+    .job-table table tr td {
+        border: 2px solid grey;
+    }
+
+    .ptable {
+        margin: 0px !important;
+        display: inline-block;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        max-height: 43px;
+        min-height: 45px;
+        line-height: 21px;
+        color: black;
+        font-weight: 500;
+        background-color: #fff;
+        display: -webkit-box;
+    }
+
+
+
+    .job-table table tr td h1,h2,h3, h4 {
+
+        padding-top: 10px;
+    }
+
+
+    @media screen and (max-device-width: 500px) and (min-device-width: 280px) {
+
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl,
+        .container-xxl {
+
+            max-width: 96%;
+
+        }
+
+        .table-b tr td a {
+            font-size: 25px;
+        }
+
+
+        .table-b tr td a {
+            font-size: 30px;
+            line-height: 32.8px;
+        }
+
+        .ul-top li a {
+            font-size: 27px;
+        }
+
+
+
+        .icon li i {
+            font-size: 50px;
+        }
+
+
+
+        .wsmenu>.wsmenu-list>li>a {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+
+
+        .title h1 {
+            font-size: 50px;
+        }
+
+        .vacancies h3 {
+            font-size: 33px !important;
+        }
+
+
+
+        footer h4 {
+            font-size: 30px;
+        }
+
+
+
+        footer a {
+
+            font-size: 25px;
+        }
+
+        body p {
+            font-size: 22px;
+        }
+
+        .btn {
+            font-size: 35px;
+        }
+
+        .job-table table tr td h1, h2, h3,h4 {
+            font-size: 38px;
+        }
+
+        .job-table table tr td {
+            font-size: 28px;
+        }
+
+
+
+        dl,ol, ul {
+            font-size: 30px;
+        }
+
+        .state div ul li {
+            margin-bottom: 1rem;
+        }
+
+        .state div ul li a {
+            line-height: 2rem;
+        }
+        .table-tr{
+            border-bottom: 1px solid;
+        }
+
+
+    }
