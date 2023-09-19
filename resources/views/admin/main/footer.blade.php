@@ -6,7 +6,7 @@
 
   <footer class="dashboard">
 
-        <p>&copy 2020 Collective. All Rights Reserved | Design by <a href="https://ms-infotech-digital.business.site/" target="_blank"
+        <p>&copy 2020 Collective. All Rights Reserved | Design by <a href="https://www.msinfotech.co/" target="_blank"
 
         class="text-primary">Ms Infotech Pvt. Ltd.</a></p>
 

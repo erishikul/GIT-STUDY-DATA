@@ -97,7 +97,7 @@
 
         <div class="container">
 
-            <p class="copy-footer-29">© 2022 All rights reserved. Developed by <a href="https://ms-infotech-digital.business.site/" target="_blank">
+            <p class="copy-footer-29">© 2022 All rights reserved. Developed by <a href="https://www.msinfotech.co/" target="_blank">
 
                     MS INFOTECH Pvt. Ltd.</a></p>
 

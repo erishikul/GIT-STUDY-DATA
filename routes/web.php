@@ -29,6 +29,8 @@ use App\Http\Controllers\vacancyController;
 use App\Http\Controllers\pdfcontroller;
 
 use App\Http\Controllers\LiveClassController;
+use App\Http\Controllers\BlogController;
+
 
 use App\Http\Controllers\settingController;
 
@@ -215,33 +217,20 @@ Route::group(['prefix' => 'admin/'], function () {
 
 
 
-    // Test Series Routes
+    // Blog  Routes
+
+    Route::get('/blog', [BlogController::class, 'viewbloglist'])->name('admin.blog');
 
     Route::get('/test_series', [TestSeriesController::class, 'test_series'])->name('admin.test_series');
 
-    Route::get('/test_series_create', [TestSeriesController::class, 'test_series_create'])->name('admin.test_series_create');
-
-    Route::get('/test_series_edit/{id}', [TestSeriesController::class, 'test_series_edit'])->name('admin.test_series_edit');
-
-    Route::get('/test_series_delete/{id}', [TestSeriesController::class, 'test_series_delete'])->name('admin.test_series_delete');
+    
+   
 
 
-
-    Route::get('/test_remove_playlist/{id}', [TestSeriesController::class, 'test_remove_playlist'])->name('admin.test_remove_playlist');
-
-    Route::post('/test_add_playlist', [TestSeriesController::class, 'test_add_playlist'])->name('admin.test_add_playlist');
+  
 
 
-
-    Route::post('/test_series_status/{id}', [TestSeriesController::class, 'test_series_status'])->name('admin.test_series_status');
-
-    Route::post('/test_series_edit_post/{id}', [TestSeriesController::class, 'test_series_edit_post'])->name('admin.test_series_edit_post');
-
-    Route::post('/test_series_create_post', [TestSeriesController::class, 'test_series_create_post'])->name('admin.test_series_create_post');
-
-
-
-    Route::post('/importExcel', [TestSeriesController::class, 'importExcel'])->name('admin.importExcel');
+    // Route::post('/importExcel', [TestSeriesController::class, 'importExcel'])->name('admin.importExcel');
 
 
 

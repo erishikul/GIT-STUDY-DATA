@@ -99,6 +99,9 @@
                             class="fa fa-circle-o-notch"></i> <span>Banners</span></a></li> -->
 
                 <li class="@if (Route::is(['admin.vacancy', 'vacancyUpdate', 'vacancy_create'])) active @endif"><a href="{{ route('admin.vacancy') }}"><i class="fa fa-circle-o-notch"></i> <span>Vacancy</span></a></li>
+
+                <li class="@if (Route::is(['admin.blog'])) active @endif"><a href="{{ route('admin.blog') }}"><i class="fa fa-circle-o-notch"></i> <span>Add Blog</span></a></li>
+
                 <li class="@if (Route::is(['setting'])) active @endif"><a href="{{ route('setting') }}"><i class="fa fa-circle-o-notch"></i> <span>Setting</span></a></li>
 
                 <!-- <li class="@if (Route::is('admin.orders')) active @endif"><a href="{{route('admin.orders')}}"><i class="fa fa-cart-plus"></i> <span>Orders</span></a></li>

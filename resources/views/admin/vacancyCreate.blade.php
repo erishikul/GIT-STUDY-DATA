@@ -228,6 +228,7 @@
 
 
                                 </div>
+                              
 
 
 
@@ -244,6 +245,21 @@
                                     </label>
 
                                 </div>
+
+                            </div>
+                            <div class="mb-3 mt-3 col-md-4">
+
+                                <label for="exampleFormControlInput1" class="form-label">Blog</label>
+
+                                <label class="switch">
+
+                                    <input type="checkbox" name="is_blog" value="1">
+
+                                    <span class="slider round"></span>
+
+                                </label>
+
+
 
                             </div>
 

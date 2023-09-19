@@ -18,6 +18,7 @@ class TestSeriesController extends Controller
 {
     public function test_series()
     {
+        return "sdf";
         $data = TestSeries::where('status', '<>', '3')->with('playlist', 'category', 'sub_category')->orderBy('id', 'desc')->get();
         $playlist = Playlist::where('status', '<>', '3')->with('category', 'sub_category', 'tests')->orderBy('id', 'desc')->get();
         return view('admin.test_series.index', ['data'=>$data, 'playlists'=>$playlist]);

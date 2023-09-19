@@ -56,7 +56,7 @@ class vacancyController extends Controller
 
             $type = 'all';
 
-            $vacancies = DB::table('jobs as jobs')->select('jobs.*')->orderBy('jobs.id', 'desc')->paginate(100);
+            $vacancies = DB::table('jobs as jobs')->select('jobs.*')->where('isblog','0')->orderBy('jobs.id', 'desc')->paginate(100);
 
         }
 
@@ -102,7 +102,7 @@ class vacancyController extends Controller
     public function newVacancy(Request $request)
 
     {
-        // return $request;
+        
         $title = $request->input('title');
 
         $department = $request->input('department');
@@ -112,6 +112,7 @@ class vacancyController extends Controller
         $tag = $request->input('tag');
 
         $description = $request->input('description');
+        $isblog= $request->input('is_blog');
 
 
         if($request->input('is_vacancy') !=null){
@@ -144,7 +145,7 @@ class vacancyController extends Controller
 
 
         // return "alskdjf";
-        $vacancy = DB::table('jobs')->insertGetId(["title"=>"$title","department"=>"$department","govt"=>"$state","vacancy"=>$is_vacancy,"admit_card"=>$is_AdmitCard,"result"=>$is_result,'description'=>$description,'tag'=>$tag]);
+        $vacancy = DB::table('jobs')->insertGetId(["title"=>"$title","department"=>"$department","govt"=>"$state","vacancy"=>$is_vacancy,"admit_card"=>$is_AdmitCard,"result"=>$is_result,'description'=>$description,'tag'=>$tag,'isblog'=>$isblog]);
 
 
 
