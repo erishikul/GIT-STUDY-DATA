@@ -112,7 +112,10 @@ class vacancyController extends Controller
         $tag = $request->input('tag');
 
         $description = $request->input('description');
-         return $isblog= $request->input('is_blog');
+          $isblog= $request->input('is_blog');
+          if(empty($isblog)){
+            $isblog = 0;
+          }
 
 
         if($request->input('is_vacancy') !=null){
