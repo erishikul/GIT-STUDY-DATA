@@ -112,7 +112,7 @@ class vacancyController extends Controller
         $tag = $request->input('tag');
 
         $description = $request->input('description');
-        $isblog= $request->input('is_blog');
+         return $isblog= $request->input('is_blog');
 
 
         if($request->input('is_vacancy') !=null){
@@ -351,20 +351,16 @@ public function vacancyUpdate(Request $request)
 
         $title = $request->input('editor1');
 
-        $seo_article = $request->input('editor2');
-
-
+       $seo_article = $request->input('editor2');
+      
 
         $update = DB::table('jobs_details')->where('id', $id)->update(['title'=>$title ,'seo_article'=>$seo_article]);
-
 
 
         if($request->input('id_1') != null){
 
             $id1 = $request->input('id_1');
-
             $delete1 = DB::table('jobs_details')->where('id', $id1)->delete();
-
         }
 
         if($request->input('id_2') != null){
