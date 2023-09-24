@@ -16,7 +16,7 @@
 
                     <li class="breadcrumb-item"><a href="{{ route('admin.vacancy') }}">Vacancies</a></li>
 
-                    <li class="breadcrumb-item active" aria-current="page">Vacancy Create</li>
+                    <li class="breadcrumb-item active" aria-current="page">Add Blog</li>
 
                 </ol>
 
@@ -27,7 +27,7 @@
             @if (!isset($vacancy_id))
 
                 <div class="card card_border py-2 mb-4">
-
+                   <center> <h1>Add Blog</h1></center>
                     <div class="card-body">
 
                         <form action="{{route('admin.PostnewVacancy')}}" method="post" class="mt-4 row">
@@ -193,67 +193,14 @@
     
                                 </div>
 
-                            <div class="col-md-12 row">
+                            
+                            <div class="mb-3 mt-3 col-md-4">
 
-                                <div class="mb-3 mt-3 col-md-4">
-
-                                    <!-- Rounded switch -->
-
-                                    <label for="exampleFormControlInput1" class="form-label">Vacancy</label>
-
-                                    <label class="switch">
-
-                                        <input type="checkbox" name="is_vacancy" value="1">
-
-                                        <span class="slider round"></span>
-
-                                    </label>
-
-                                </div>
-
-
-
-                                <div class="mb-3 mt-3 col-md-4">
-
-                                    <label for="exampleFormControlInput1" class="form-label">Admit Card</label>
-
-                                    <label class="switch">
-
-                                        <input type="checkbox" name="is_admit_card" value="1">
-
-                                        <span class="slider round"></span>
-
-                                    </label>
-
-
-
-                                </div>
                               
-
-
-
-                                <div class="mb-3 mt-3 col-md-4">
-
-                                    <label for="exampleFormControlInput1" class="form-label">Results</label>
-
-                                    <label class="switch">
-
-                                        <input type="checkbox" name="is_result" value="1">
-
-                                        <span class="slider round"></span>
-
-                                    </label>
-
-                                </div>
-
-                            </div>
-                            {{-- <div class="mb-3 mt-3 col-md-4">
-
-                                <label for="exampleFormControlInput1" class="form-label">Blog</label>
 
                                 <label class="switch">
 
-                                    <input type="checkbox" name="is_blog" value="1">
+                                    <input type="hidden" name="is_blog" value="1">
 
                                     <span class="slider round"></span>
 
@@ -261,7 +208,7 @@
 
 
 
-                            </div> --}}
+                            </div>
 
 
 

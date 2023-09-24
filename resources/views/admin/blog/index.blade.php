@@ -15,7 +15,7 @@
                     <li class="breadcrumb-item active" aria-current="page">Vacancies Mangment</li>
                 </ol>
             </nav>
-            <a href="{{route('vacancy_create')}}" class="btn btn-info">Create New Blog </a>
+            <a href="{{route('admin.add_blog')}}" class="btn btn-info">Create New Blog </a>
         </div>
 
             <div class="data-tables">

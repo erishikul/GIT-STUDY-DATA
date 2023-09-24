@@ -16,4 +16,10 @@ class BlogController extends Controller
            return view('admin.blog.index',['blog'=>$blog]);
 
     }
+    public function AddBlog(Request $request){
+
+        return view('admin.blog.add_blog');
+
+
+    }
 }

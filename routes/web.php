@@ -223,6 +223,12 @@ Route::group(['prefix' => 'admin/'], function () {
 
     Route::get('/test_series', [TestSeriesController::class, 'test_series'])->name('admin.test_series');
 
+    Route::get('/add_blog',[BlogController::class,'AddBlog'])->name('admin.add_blog');
+
+    // Route::get('/admin/add_blog', function () {
+    //     return view('admin.blog.add_blog')->name('admin.test_series'); // 'example' is the name of your Blade file (without the .blade.php extension)
+    // });
+
     
    
 
