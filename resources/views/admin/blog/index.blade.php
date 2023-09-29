@@ -45,10 +45,10 @@
                                                     colspan="1"
                                                     aria-label="Designation: activate to sort column ascending"
                                                     style="">Title</th>
-                                                <th class="sorting" tabindex="0" aria-controls="example" rowspan="1"
+                                                {{-- <th class="sorting" tabindex="0" aria-controls="example" rowspan="1"
                                                     colspan="1"
                                                     aria-label="Joining date: activate to sort column ascending"
-                                                    style="">Status</th>
+                                                    style="">Status</th> --}}
                                                 <th class="sorting" tabindex="0" aria-controls="example" rowspan="1"
                                                     colspan="1"
                                                     aria-label="Joining date: activate to sort column ascending"
@@ -60,8 +60,19 @@
 
                                             @foreach ($blog as $row )
                                             <tr>
+                                                
+                                                <td>
+                                                    {{ $loop->iteration }}
+                                                </td>
                                                 <td>
                                                     {{$row->id}}
+                                                </td><td>
+                                                    {{$row->title}}
+                                                </td>
+                                                
+                                                <td>
+                                                   <button>Delete</button>
+                                                   <button>Update</button>
                                                 </td>
                                             </tr>
                                             @endforeach

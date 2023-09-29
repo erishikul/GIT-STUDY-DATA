@@ -30,7 +30,7 @@
                    <center> <h1>Add Blog</h1></center>
                     <div class="card-body">
 
-                        <form action="{{route('admin.PostnewVacancy')}}" method="post" class="mt-4 row">
+                        <form action="{{route('admin.PostnewVacancy')}}"   enctype="multipart/form-data"   method="post" class="mt-4 row">
 
                             @csrf
 
@@ -143,6 +143,18 @@
                                 </select>
 
                             </div>
+                            <div class="mb-6 col-md-6">
+    
+                                <label for="Tag" class="form-label">Image</label>
+
+                                <input type="file" class="form-control" name="img" id="Tag" 
+                                    placeholder="Add Tag" >
+                                    @if($errors->has('img'))
+                                    <p class="text-danger">{{ $errors->first('img') }}</p>
+                                @endif
+                                    
+
+                            </div>
 
 
 
@@ -170,7 +182,18 @@
 
                                 </div> --}}
 
+
+    
                                 <div class="mb-6 col-md-6">
+    
+                                    <label for="Tag" class="form-label">Tag</label>
+    
+                                    <input type="text" class="form-control" name="tag" id="Tag" value=""
+                                        placeholder="Add Tag" required="">
+    
+                                </div>
+
+                                <div class="mb-12 col-md-12">
 
                                     <label for="Description" class="form-label">Description</label>
     
@@ -183,15 +206,8 @@
                                         </textarea>
     
                                 </div>
-    
-                                <div class="mb-6 col-md-6">
-    
-                                    <label for="Tag" class="form-label">Tag</label>
-    
-                                    <input type="text" class="form-control" name="tag" id="Tag" value=""
-                                        placeholder="Add Tag" required="">
-    
-                                </div>
+
+                               
 
                             
                             <div class="mb-3 mt-3 col-md-4">

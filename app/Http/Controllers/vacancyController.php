@@ -147,9 +147,21 @@ class vacancyController extends Controller
         }else{ $is_result = 0; }
 
 
-        // return "alskdjf";
-        $vacancy = DB::table('jobs')->insertGetId(["title"=>"$title","department"=>"$department","govt"=>"$state","vacancy"=>$is_vacancy,"admit_card"=>$is_AdmitCard,"result"=>$is_result,'description'=>$description,'tag'=>$tag,'isblog'=>$isblog]);
+        // add blog img
 
+        if($request->hasFile('img')){
+
+            $image = $request->file('img');
+            $imageName = time() . '.' .$image->extension();
+             $request->img->move(public_path('images/blog_image/'), $imageName);
+           
+            $imagePath = 'images/blog_image/' . $imageName;
+
+        }
+           
+
+        // return "alskdjf";
+        $vacancy = DB::table('jobs')->insertGetId(["title"=>"$title","department"=>"$department","govt"=>"$state","vacancy"=>$is_vacancy,"admit_card"=>$is_AdmitCard,"result"=>$is_result,'description'=>$description,'tag'=>$tag,'isblog'=>$isblog,'blog_img'=> $imagePath]);
 
 
         if($vacancy){

@@ -453,11 +453,12 @@ class SiteController extends Controller
 
              $seo_data = DB::table('setting')->where('id', '1')->first();
                 
+             $blogs_data = DB::table('jobs')->where('isblog','1')->orderBy('id', 'desc')->limit(4)->get();
             // return   $canonicalUrl = url('/example');
 
             
 
-            return view('web.vacancy', ['vacancy' => $vacancy, 'result' => $result, 'admit_card' => $admit_card,'seo_data'=>$seo_data]);
+            return view('web.vacancy', ['vacancy' => $vacancy, 'result' => $result, 'admit_card' => $admit_card,'seo_data'=>$seo_data,'blogs_data'=>$blogs_data]);
 
         } else {
 

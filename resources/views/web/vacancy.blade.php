@@ -295,12 +295,9 @@
                 </thead>
 
                 <tbody class="table-b">
-
                     @foreach ($vacancy as $row)
-
                     <tr>
-
-                        <td id="" class=""><a href="{{ route('vacancy_detail', $row->id) }}?<?php $title = str_replace(' ', '-', $row->title);
+                        <td id="" class=""><a href="{{ route('vacancy_detail',$row->id) }}?<?php $title = str_replace(' ', '-', $row->title);
 
                                                                                             echo $title; ?>" class="key" style="padding:0px;"> <?php echo $row->title; ?> <span>.....</span> </a>
 
@@ -323,6 +320,91 @@
     @endif
 
 </div>
+
+
+<style>
+    
+  
+    .card {
+        margin-top: 20px;
+      background-color: #fff;
+      /* max-width: 800px; */
+      box-shadow: 2px 2px 5px #9E9E9E, -1px -1px 5px #9E9E9E;
+      border-radius: 3px;
+      display: grid;
+      grid-template-column: repeat(5, 1fr);
+      /* margin: auto; */
+      padding: 10px;
+    }
+    .card .img-container {
+      width: 100px;
+      height: 100%;
+      grid-column: 2;
+      background-color: #c1b7b4;
+      /* background-image: url('https://www.dropbox.com/s/7d5qt5wb2xpqeww/city-street.jpg?raw=1'); */
+      background-size: cover;
+      background-position: center center;
+    }
+    .img-container img{
+        width: 100%; 
+        height: auto;
+    }
+    .card-content {
+      grid-column: 3 / 5;
+      padding: 10px 30px;
+      border-left: 1px solid #ccc;
+    }
+    h2 {
+      text-transform: uppercase;
+      color: #555;
+    }
+    h1 {
+      margin-bottom: 0;
+    }
+    .card-content .author {
+      border-top: 1px solid #cdcdcd;
+      font-weight: 700;
+      margin-top: 25px;
+      padding: 25px 0 10px 0;
+      color: #555;
+      display: inline-block;
+    }
+    
+    
+         
+        </style>
+
+
+<section>
+    <div class="container" >
+        @foreach ($blogs_data as $row )
+
+      
+        <div class="card">
+            <div class="img-container">
+                <img src="{{asset($row->blog_img)}}" alt=""  >
+            </div>
+            <div class="card-content">
+             
+              <h2>Hello</h2>
+              <h1>  {{$row->title}}</h1>
+              <p class="excerpt">  {{$row->title}}</p>
+              <hr>
+              <div>
+              <p style="display: inline-block" >Date:{{$row->created_at}}</p>
+              
+              <button style="float: right;" ><a href="{{route('web.blog_view',$row->id)}}">view more</a></button>
+            </div>
+            </div>
+          </div>
+            
+        @endforeach
+
+       
+
+       
+      </div>
+</section>
 
 
 <section class="container mb-5" >

@@ -22,4 +22,22 @@ class BlogController extends Controller
 
 
     }
+    public function blog_view(Request $request){
+      
+        $id= $request->id;
+            //     $blog_data = DB::select("
+            //   SELECT jobs.*, jobs_details.*
+            //   FROM jobs
+            //   INNER JOIN jobs_details ON jobs.id = jobs_details.job_id
+            //   WHERE jobs.id = :id", ['id' => $id]);
+
+              $blog_data = DB::table('jobs')
+                ->join('jobs_details', 'jobs.id', '=', 'jobs_details.job_id')
+                ->select('jobs.title AS job_title','jobs.created_at','jobs.blog_img','jobs_details.title AS job_details_title', 'jobs_details.*')
+                ->where('jobs.id', '=', $id)
+                ->get();
+
+
+          return view('web.blog_view',['blog_data'=>$blog_data]);
+      }
 }

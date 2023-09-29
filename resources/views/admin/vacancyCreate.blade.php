@@ -21,9 +21,6 @@
                 </ol>
 
             </nav>
-
-
-
             @if (!isset($vacancy_id))
 
                 <div class="card card_border py-2 mb-4">
