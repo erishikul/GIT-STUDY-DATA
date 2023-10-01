@@ -99,6 +99,7 @@ class vacancyController extends Controller
 
 
 
+
     public function newVacancy(Request $request)
 
     {
@@ -157,6 +158,8 @@ class vacancyController extends Controller
            
             $imagePath = 'images/blog_image/' . $imageName;
 
+        }else{
+            $imagePath=null;
         }
            
 
