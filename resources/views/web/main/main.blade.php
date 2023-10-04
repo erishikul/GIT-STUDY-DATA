@@ -1,21 +1,22 @@
+
+
+<?php
+    if(isset($description)){
+    // $description;
+     } else{
+        $description ="Stydy Data, Study Data : StudyData.in provides latest Govt Result Jobs, Online Form, givt Naukri Result in 2023 various sectors such as Railway, Bank, SSC, Navy, Police, UPPSC, UPSSSC, UPTET, UP Scholarship and other In alerts at one place ";
+        // echo $description;
+     }
+   ?>
 <!doctype html>
 
 <html lang="en">
 
 <head>
-
-    <!-- Required meta tags -->
-
     <meta charset="utf-8">
     <meta name="viewport">
-    {{-- <meta name="description" content="Stydy Data, Study Data : StudyData.in provides latest Govt Result Jobs, Online Form, givt Naukri Result in 2023 various sectors such as Railway, Bank, SSC, Navy, Police, UPPSC, UPSSSC, UPTET, UP Scholarship and other In alerts at one place  "> --}}
-    <meta name="description" content="{{ empty($discretion) ? "Stydy Data, Study Data : StudyData.in provides latest Govt Result Jobs, Online Form, givt Naukri Result in 2023 various sectors such as Railway, Bank, SSC, Navy, Police, UPPSC, UPSSSC, UPTET, UP Scholarship and other In alerts at one place " : $discretion }}">
-  
-    {{-- {{ empty($discretion) ? "discretion not set----" : $discretion }} --}}
-    {{-- <meta name="keywords" content="Study Data, Results,result 2023,  latest result, StudyData, Sarkari,results,Govt Naukri,  results 2023, Sarkari Exam, StudyData.in,"> --}}
-    <meta name="keywords" content="{{ empty($tag) ? "Study Data, Results,result 2023,  latest result, StudyData, Sarkari,results,Govt Naukri,  results 2023, Sarkari Exam, StudyData.in," : $tag }}">
-   
-   
+    <meta name="description" content="<?php echo $description ?>">
+    <meta name="keywords" content="{{ empty($tag) ? ' Study Data, Results,result 2023,  latest result, StudyData, Sarkari,results,Govt Naukri,  results 2023, Sarkari Exam, StudyData.in,' : $tag }}">
     <meta name="rating" content="general" />
     <meta http-equiv="content-language" content="en" />
     <meta name="distribution" content="global" />
@@ -67,7 +68,7 @@
 <body>
     
  
-    
+
     
 
     <style>

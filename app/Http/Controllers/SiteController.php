@@ -455,10 +455,10 @@ class SiteController extends Controller
                 
              $blogs_data = DB::table('jobs')->where('isblog','1')->orderBy('id', 'desc')->limit(4)->get();
             // return   $canonicalUrl = url('/example');
-
+          
             
 
-            return view('web.vacancy', ['vacancy' => $vacancy, 'result' => $result, 'admit_card' => $admit_card,'seo_data'=>$seo_data,'blogs_data'=>$blogs_data]);
+            return view('web.vacancy', ['vacancy' => $vacancy, 'result' => $result, 'admit_card' => $admit_card,'seo_data'=>$seo_data,'blogs_data'=>$blogs_data ]);
 
         } else {
 
@@ -502,6 +502,7 @@ class SiteController extends Controller
     public function vacancyDetail($id)
 
     {
+        
 
         $vacancy = DB::table('jobs')->where('id', $id)->first();
 
@@ -518,6 +519,8 @@ class SiteController extends Controller
        }else{
         $description = $vacancy->title;
        }
+
+    //    return $description;
        
         return view('web.govt', ['vacancy' => $vacancy, 'detail' => $detail,'canonicalUrl'=>$canonicalUrl,'description'=>$description,'tag'=>$tag]);
 

@@ -6,6 +6,11 @@
 @endsection
 
 @section('content')
+
+
+
+
+
     <style>
         /* ============================ */
 
@@ -308,6 +313,9 @@
             color: black !important;
         }
     </style>
+
+
+       
     
     <div class="container mb-3 shoet_info addcss">
 

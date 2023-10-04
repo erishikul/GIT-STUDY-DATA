@@ -76,6 +76,8 @@ class vacancyController extends Controller
 
     {
 
+        
+
         // $details = DB::table('jobs as jobs')->where('jobs.id', $id)
 
         // ->join('jobs_details as info', 'info.job_id', '=', 'jobs.id')->select('jobs.*', 'info.id as infoId', 'info.job_id' , 'info.title as info')->get();
@@ -83,8 +85,7 @@ class vacancyController extends Controller
 
 
         $details = DB::table('jobs')->where('jobs.id', $id)->select('jobs.*')->first();
-
-
+    
         return view('admin.vacancyUpdate', ['details' => $details]);
 
         // return $details;
